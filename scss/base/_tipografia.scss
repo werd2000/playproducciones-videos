@@ -1,0 +1,44 @@
+// TYPOGRAFÍA ====================================================
+
+// HEADINGS ====================================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin : 0;
+	color : inherit;
+	text-rendering : optimizelegibility;
+		&.altheader {
+			text-transform: uppercase;
+            display: block;
+		}
+}
+
+.h2 {
+	font-size: 1.6em;
+}
+
+
+// p,
+// ol,
+// ul,
+// dl,
+// address {
+// 	margin-bottom : $baselineheight;
+// 	line-height : $baselineheight;
+// }
+
+ul,
+ol {
+	margin : 0 0 0 0;
+	padding : 0 0 0 $padding;
+}
+
+ul li,
+ol li {
+	margin : 0;
+	list-style: none;
+}

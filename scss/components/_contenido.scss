@@ -1,0 +1,87 @@
+.contenido {
+    background: $color-white;
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+    #principal {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: .3em;
+    }
+
+    .img-usuario{
+        width:  30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .contenido input{
+        width: 100%;
+    }    
+
+    .nombre-usuario {
+        display: inline-block;
+        line-height: 30px;
+        margin: 0 1em;
+    }
+
+    .videos-destacados,
+    .videos-nuevos,
+    .videos-masvistos {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 1em;
+    }   
+}
+@media (min-width: 600px) {
+    #principal {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    .img-usuario{
+        width:  50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .contenido input{
+        width: 50%;
+    }
+
+    .nombre-usuario {
+        display: inline-block;
+        line-height: 50px;
+        margin: 0 1em;
+    }
+    
+    .videos-destacados,
+    .videos-nuevos,
+    .videos-masvistos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1em;
+    }
+}
+
+.video {
+    width: 100%;
+    // min-height: 100px;
+    box-sizing: border-box;
+    background: #487eb0;
+}
+
+#destacados h3 {
+    color: $color-primary;
+}
+
+#nuevos h3 {
+    color: $color-secondary;
+}
+
+#masvistos h3 {
+    color: $color-gray;
+}

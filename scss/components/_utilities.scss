@@ -1,0 +1,58 @@
+// ==========================================
+// $UTILITIES
+// ==========================================
+
+// Margins
+@for $i from 0 to 4 {
+    @if $i==0 {
+        .m-#{$i} {
+            margin: calc(#{$i}*#{$margin});
+        }
+        .mb-#{$i} {
+            margin-bottom: calc(#{$i}*#{$margin});
+        }
+        .mt-#{$i} {
+            margin-top: calc(#{$i}*#{$margin});
+        }
+        .ml-#{$i} {
+            margin-left: calc(#{$i}*#{$margin});
+        }
+        .mr-#{$i} {
+            margin-right: calc(#{$i}*#{$margin});
+        }        
+    }
+    @else {
+        .m-#{$i} {
+            margin: calc(#{$i}/4*#{$margin});
+        }
+        .mb-#{$i} {
+            margin-bottom: calc(#{$i}/4*#{$margin});
+        }
+        .mt-#{$i} {
+            margin-top: calc(#{$i}/4*#{$margin});
+        }
+        .ml-#{$i} {
+            margin-left: calc(#{$i}/4*#{$margin});
+        }
+        .mr-#{$i} {
+            margin-right: calc(#{$i}/4*#{$margin});
+        }
+    }
+}
+
+.text-white {
+    color: $color-white;
+}
+
+.float-right {
+    float: right;
+}
+
+.inline-block{
+    display: inline-block;
+    margin: 1em;
+}
+
+.text-center {
+    text-align: center;
+}

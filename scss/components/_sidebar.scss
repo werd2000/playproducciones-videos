@@ -1,0 +1,10 @@
+.side-bar {
+    background: $color-primary;
+    color: $color-white;
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+}
+
+// h1 small {
+//     color: $color-brand;
+// }

@@ -1,0 +1,55 @@
+// ==========================================
+// $GRIDS
+// ==========================================
+
+.container {
+    @include max-width(1024px);
+}
+
+@media (min-width: 600px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        grid-template-rows: 1fr 50px;
+        grid-gap: 0px;
+        // grid-auto-rows: minmax(100px, auto);
+    }
+}
+
+@media (max-width: 600px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 1fr 50px;
+        grid-gap: 0px;
+        // grid-auto-rows: minmax(100px, auto);
+    }
+}
+
+// .col {
+//     grid-column: 1 / 2;
+//     grid-row: 1;
+// }
+
+// .row {
+//     display: flex;
+//     margin: 0;
+// }
+
+
+// @for $col from 1 to 12 {
+//     .col-#{$col} {
+//         width: calc(#{$col}*100%/12);
+//         // margin-left: calc(#{$espacio-entre-columns}/2);
+//         // margin-right: calc(#{$espacio-entre-columns}/2);
+//         margin: 0;
+//         padding: $padding;
+//         box-sizing: border-box;
+//     }
+// }
+
+// .grid {
+//     display: flex;
+//     align-items: stretch;
+//     flex-wrap: wrap;
+// }
